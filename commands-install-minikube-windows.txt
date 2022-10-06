@@ -1,0 +1,11 @@
+#Check to see if virtualization is supported
+systeminfo
+
+#Install Virtualbox (info at chocolatey.org)
+choco install virtualbox
+
+#Install Minikube with Chocolatey
+choco install minikube
+
+#Start Minikube
+minikube start

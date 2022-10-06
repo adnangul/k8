@@ -1,0 +1,20 @@
+#Check to see if virtualization is supported
+sysctl -a | grep -E --color 'machdep.cpu.features|VMX'
+
+#Install Virtualbox with Brew (info at brew.sh)
+brew cask install virtualbox
+ 
+#Install Minikube with Brew
+brew cask install minikube
+
+#Install Kubectl
+brew install kubernetes-cli
+
+#Install the Docker Client
+brew install docker
+
+#Start Minikube
+minikube start
+
+#Configure the Docker Client
+minikube docker-env

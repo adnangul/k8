@@ -1,0 +1,13 @@
+Start
+minikube start
+
+dashboard
+minikube dashboard
+
+Stop
+minikube stop
+
+
+Using kubectl - minikube
+-----------------------
+minikube kubectl -- get pods
